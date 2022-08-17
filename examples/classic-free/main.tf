@@ -8,9 +8,9 @@ provider "ibm" {
 
 module "classic_free_cluster" {
   //Uncomment the following line to make the source point to registry level
-  //source = "terraform-ibm-modules/cluster/ibm//modules/classic-free"
+  source = "terraform-ibm-modules/cluster/ibm//modules/classic-free"
 
-  source = "../../modules/classic-free"
+  //source = "../../modules/classic-free"
 
   cluster_name   = var.cluster_name
   worker_zone    = var.worker_zone
